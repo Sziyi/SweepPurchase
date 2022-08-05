@@ -8,6 +8,4 @@ function wxToPromise(method = 'request', options = {}){
     })
   }
   
-  export default wxToPromise
-  
-  
+export default wxToPromise
