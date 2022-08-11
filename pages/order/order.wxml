@@ -1,2 +1,43 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<view class="container">
+  <view class="list">
+    <view class="n" wx:for="{{List}}" wx:key="index">
+      <view class="content">
+        <view class="title">{{item.title}}</view>
+        <view class="price">￥{{item.price}}</view>
+      </view>
+      <view class="buttom">
+        <view class="k"></view>
+        <view class="num">x{{item.num}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="spread">
+    <view bindtap="HandSelse" wx:if="{{fulseIcon}}"> <text>共{{List.length}}件商品 展开 </text>
+      <view class="xl"></view>
+    </view>
+    <view bindtap="HandHide" wx:if="{{!fulseIcon}}"><text>共{{List.length}}件商品 收起 </text>
+      <view class="lx"></view>
+    </view>
+  </view>
+  <view class="balance">
+    <view class="bal">余额 <text>(￥{{balance}})</text></view>
+    <switch color='#FFA500' checked bindchange="bindchange"></switch>
+  </view>
+  <view class="balance">
+    <view class="goods">商品金额 </view>
+    <view class="goodsPrice">￥{{goodsPrice}}</view>
+  </view>
+  <view class="balance">
+    <view class="deduction">余额减扣 </view>
+    <view class="deductionPrice">-￥{{switch?balance:0}}</view>
+  </view>
+  <view class="payGoods">
+    请支付完成后携带商品
+  </view>
+  <view class="butm">
+  <view class="payment">
+  <text class="pay">实际支付:</text> <text class="parice">￥{{actualPayment}}</text>
+  </view>
+  <view class="confirm" bindtap="confirmPayment">确认支付</view>
+  </view>
+</view>

@@ -1,1 +1,118 @@
 /* pages/order/order.wxss */
+/* .container{
+  display: flex;
+  flex-direction: column;
+} */
+.list {
+  height: 200rpx;
+  overflow: hidden;
+  width: 100%;
+  background-color: white;
+}
+
+.n {
+  width: 96%;
+  height: 180rpx;
+  margin: auto;
+  border-bottom: 2rpx solid rgb(221, 219, 219);
+}
+
+.content {
+  padding: 30rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  color: #f60;
+}
+
+.buttom {
+  height: 170rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.spread {
+  height: 110rpx;
+  background-color: #fff;
+  padding-top: 25rpx;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-bottom: 15rpx;
+}
+
+.xl {position: absolute;
+  right: 180rpx;
+  top:32rpx;
+  width: 25rpx;
+  height: 25rpx;
+  border-left: 6rpx solid #ccc;
+  border-bottom: 6rpx solid #ccc;
+  transform: rotate(-45deg);
+  margin-left: 20rpx;
+}
+
+.lx {position: absolute;
+  right: 180rpx;
+  top:38rpx;
+  width: 25rpx;
+  height: 25rpx;
+  border-left: 6rpx solid #ccc;
+  border-bottom: 6rpx solid #ccc;
+  transform: rotate(135deg);
+  margin-left: 20rpx;
+}
+.balance{
+  height: 140rpx;
+  background-color: #fff; 
+  padding: 0 15rpx 0 15rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.goodsPrice{
+  color: #f60;
+}
+.balance text{
+  color: #f60;
+}
+
+.payGoods{
+  display: flex;
+  justify-content: center;
+  line-height: 180rpx;
+
+}
+
+.butm{
+  width: 100%;
+  height: 160rpx;
+  border-top: 1px solid rgb(230, 230, 230);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.payment{
+  height: 120rpx;
+  line-height: 120rpx;
+}
+.payment .pay{
+  color: rgb(124, 122, 122);
+}
+.payment .parice{
+  color: #f60;
+}
+.confirm{
+  width: 220rpx;
+  height: 120rpx;
+  background-color: #FFA500;
+  color: #fff;
+  text-align: center;
+  line-height: 120rpx;
+}
