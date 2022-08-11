@@ -1,24 +1,28 @@
 <view class="container">
-<view class="top">
-<image class="img" src="../../assets/images/face.png"></image>
-<view class="r">
-<view class="name">颜淡</view>
-<view class="balance">账户余额:  <text>4元</text></view>
-</view>
-</view>
-<view class="wallet">
-<view class="le">
-  <image class="money" src="../../assets/images/user/money.png"></image>
-<view class="myWallet">我的钱包 <view class="send"><view class="s">充就送</view></view></view>
-
-<view class="arrow"></view>
-</view>
-</view>
-<view class="store">
-<view class="le">
-  <image class="money" src="../../assets/images/user/shop_order.png"></image>
- <view class="order">微店订单</view>
-</view>
- <view class="arrow"></view>
-</view>
+  <view class="top">
+    <image class="img" src="../../assets/images/face.png"></image>
+    <view class="r">
+      <view class="name">颜淡</view>
+      <view class="balance">账户余额: <text>4元</text></view>
+    </view>
+  </view>
+ <view class="big">
+  <view class="wallet">
+    <view class="le">
+      <image class="money" src="../../assets/images/user/money.png"></image>
+      <view class="myWallet">我的钱包 <view class="send">
+          <view class="s">充就送</view>
+        </view>
+      </view>
+      <view class="arrow"></view>
+    </view>
+  </view>
+  <view class="store">
+    <view class="le">
+      <image class="money" src="../../assets/images/user/shop_order.png"></image>
+      <view class="order">微店订单</view>
+    </view>
+    <view class="arrow"></view>
+  </view>
+ </view>
 </view>

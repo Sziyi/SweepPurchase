@@ -59,14 +59,17 @@ changactualmount(){
 },
 // 确认支付
 confirmPayment(){
-  console.log("确认支付");
+  // console.log("确认支付");
   wx.showLoading({
     title:'微信支付',
-    
+  })
+  wx.navigateTo({
+    url: '/pages/success/success',
   })
   setTimeout(function () {
     wx.hideLoading()
   }, 2000)
+
 },
 
 /**

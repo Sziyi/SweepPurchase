@@ -1,3 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
 .top {
   height: 200rpx;
   background-color: orange;
@@ -28,15 +33,24 @@
   color: #f60;
 }
 
+.big {
+  width: 100%;
+  flex: 1;
+  background-color: #f60;
+}
+
 .wallet {
   height: 120rpx;
   background-color: #fff;
   display: flex;
   margin-bottom: 20rpx;
 }
-.le{
+
+.le {
+  width: 100%;
   display: flex;
 }
+
 .money {
   width: 60rpx;
   height: 60rpx;
@@ -66,21 +80,23 @@
   left: 6rpx;
 }
 
-.store{
+.store {
   height: 120rpx;
   background-color: #fff;
   border-bottom: 1px solid rgb(230, 228, 228);
   display: flex;
   justify-content: space-between;
 }
-.order{
+
+.order {
   line-height: 120rpx;
 }
-.arrow{
+
+.arrow {
   width: 20rpx;
   height: 20rpx;
   border-bottom: 2rpx solid #ccc;
   border-right: 2rpx solid #ccc;
   transform: rotate(-45deg);
-margin: 40rpx 10rpx 0 0;
+  margin: 50rpx 35rpx 0 0;
 }

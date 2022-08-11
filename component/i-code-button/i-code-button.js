@@ -26,7 +26,7 @@ Component({
      * 开启扫码
      */
     handleScanCode(){
-      console.log(this.data.count)
+      // console.log(this.data.count)
       if(this.data.status){
         this.triggerEvent("getResult")
         return
